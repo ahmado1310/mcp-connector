@@ -1,5 +1,48 @@
 # MCP Connector
 
+Model Context Protocol (MCP) server implementation using FastMCP v2 with HTTP transport for use with Document Intelligence
+
+## Architecture
+
+```mermaid
+flowchart TB
+    subgraph "Bosch Private Cloud"
+        Backend["Document Intelligence Backend"]
+    end
+
+    subgraph "User Local Machine"
+        subgraph "Client Browser"
+            UI["Document Intelligence"]
+        end
+
+        Gateway["MCP Gateway"]
+        AdoSrv["MCP ADO Server"]
+        DocSrv["MCP Docupedia Server"]
+
+        Gateway --> AdoSrv
+        Gateway --> DocSrv
+    end
+
+    subgraph "Cloud Hyperscaler"
+        LLM["LLM Model"]
+    end
+
+    UI <-->|"HTTPS"| Backend
+    Backend <-->|"API"| LLM
+    UI <--> Gateway
+
+    style UI fill:#e1f5fe
+    style Gateway fill:#fff3e0
+    style AdoSrv fill:#fff3e0
+    style DocSrv fill:#fff3e0
+    style Backend fill:#e8f5e9
+    style LLM fill:#f3e5f5
+```
+
+## Implementation Guide
+
+While MCP server are exptected to implement the standard streaming-http interface (SSE has been deprected from the MCP standard) browser security requires a relaxed CORS policy. Please see the demo server for a reference implementation.
+
 A consolidated MCP Gateway system with Azure DevOps and Confluence/Docupedia integration.
 
 ## Overview
@@ -111,9 +154,10 @@ Copy-Item mcp-docupedia\config.example.json mcp-docupedia\config.json
 
 2. Edit `mcp-docupedia\config.json`:
 
->`default_space`: Use your Confluence space key (e.g., "DOCUPEDIA")
+> `default_space`: Use your Confluence space key (e.g., "DOCUPEDIA")
 
->`max_results`: Maximum number of search results to return. This can be adjusted based on your needs. Depending how many results you want to give back per search to the AI model.
+> `max_results`: Maximum number of search results to return. This can be adjusted based on your needs. Depending how many results you want to give back per search to the AI model.
+
 ```json
 {
   "confluence": {
@@ -134,7 +178,6 @@ Copy-Item mcp-docupedia\config.example.json mcp-docupedia\config.json
     "content_type": "page"
   }
 }
-
 ```
 
 **Creating a PAT:**
@@ -216,7 +259,7 @@ Press `Ctrl+C` in the terminal to stop the launcher and all running servers.
 # ADO Server
 uv run mcp-ado/mcp_server.py
 
-# Docupedia Server  
+# Docupedia Server
 uv run mcp-docupedia/mcp_server.py
 
 # Gateway UI
@@ -225,11 +268,11 @@ uv run mcp-gateway/ui.py
 
 ## Endpoints
 
-| Service | Endpoint | Health Check |
-| ------- | -------- | ------------ |
-| MCP ADO Server | <http://localhost:8003/mcp> | <http://localhost:8003/healthcheck> |
+| Service              | Endpoint                    | Health Check                        |
+| -------------------- | --------------------------- | ----------------------------------- |
+| MCP ADO Server       | <http://localhost:8003/mcp> | <http://localhost:8003/healthcheck> |
 | MCP Docupedia Server | <http://localhost:8004/mcp> | <http://localhost:8004/healthcheck> |
-| Gateway | <http://localhost:8001/mcp> | <http://localhost:8001/health> |
+| Gateway              | <http://localhost:8001/mcp> | <http://localhost:8001/health>      |
 
 ## Project Structure
 
