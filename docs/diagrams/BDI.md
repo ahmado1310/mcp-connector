@@ -4,37 +4,38 @@ Model Context Protocol (MCP) server implementation using FastMCP v2 with HTTP tr
 ## Architecture
 
 ```mermaid
-graph TB
+flowchart TB
     subgraph "Bosch Private Cloud"
-        Backend[Document Intelligence Backend]
+        Backend["Document Intelligence Backend"]
     end
 
-    subgraph "User's Local Machine"
-        subgraph "Client/Browser"
-            UI[Document Intelligence]
+    subgraph "User Local Machine"
+        subgraph "Client Browser"
+            UI["Document Intelligence"]
         end
-        MCPServer[MCP Server]
-        FileSystem[File System<br/>Documents]
-        LocalApps[Local Applications]
-        
-        MCPServer <--> FileSystem
-        MCPServer <--> LocalApps
+
+        Gateway["MCP Gateway"]
+        AdoSrv["MCP ADO Server"]
+        DocSrv["MCP Docupedia Server"]
+
+        Gateway --> AdoSrv
+        Gateway --> DocSrv
     end
-    
-    subgraph "Cloud/Hyperscaler"
-        LLM[LLM Model]
+
+    subgraph "Cloud Hyperscaler"
+        LLM["LLM Model"]
     end
-    
-    UI <-->|HTTPS| Backend
-    Backend <-->|API| LLM
-    UI <--> MCPServer
-    
+
+    UI <-->|"HTTPS"| Backend
+    Backend <-->|"API"| LLM
+    UI <--> Gateway
+
     style UI fill:#e1f5fe
-    style MCPServer fill:#fff3e0
+    style Gateway fill:#fff3e0
+    style AdoSrv fill:#fff3e0
+    style DocSrv fill:#fff3e0
     style Backend fill:#e8f5e9
     style LLM fill:#f3e5f5
-    style FileSystem fill:#f5f5f5
-    style LocalApps fill:#f5f5f5
 ```
 
 ## Implementation Guide
