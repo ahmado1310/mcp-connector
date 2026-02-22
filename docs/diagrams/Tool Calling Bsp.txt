@@ -1,0 +1,298 @@
+Tool Calling Bsp:
+Tool: ado_get_work_item
+output-available
+Input:
+{
+  "work_item_id": 564266
+}
+Output:
+{
+  "id": 564266,
+  "rev": 24,
+  "fields": {
+    "System.Id": 564266,
+    "System.AreaId": 7509,
+    "System.AreaPath": "Nx_IES",
+    "System.TeamProject": "Nx_IES",
+    "System.NodeName": "Nx_IES",
+    "System.AreaLevel1": "Nx_IES",
+    "System.Rev": 24,
+    "System.AuthorizedDate": "2026-01-09T11:29:34.653Z",
+    "System.RevisedDate": "9999-01-01T00:00:00Z",
+    "System.IterationId": 11588,
+    "System.IterationPath": "Nx_IES\\PIs\\PI36",
+    "System.IterationLevel1": "Nx_IES",
+    "System.IterationLevel2": "PIs",
+    "System.IterationLevel3": "PI36",
+    "System.WorkItemType": "ART Organizer",
+    "System.State": "Funnel",
+    "System.Reason": "Moved to state Funnel",
+    "System.AssignedTo": {
+      "displayName": "Schaefter Thomas (BCI PAP-PRM)",
+      "url": "https://spsprodweu3.vssps.visualstudio.com/Ad89cb949-5302-4c48-ab42-a73aa7ab9023/_apis/Identities/0a6102ff-c8b7-4f75-9eff-40278093d9f4",
+      "_links": {
+        "avatar": {
+          "href": "https://dev.azure.com/bosch-bci/_apis/GraphProfile/MemberAvatars/aad.NDE3NDIxOWUtYjk0NS03ZTBkLWJlZTgtNTM0MTMwOWEyYjE0"
+        }
+      },
+      "id": "0a6102ff-c8b7-4f75-9eff-40278093d9f4",
+      "uniqueName": "sct2fe@bosch.com",
+      "imageUrl": "https://dev.azure.com/bosch-bci/_apis/GraphProfile/MemberAvatars/aad.NDE3NDIxOWUtYjk0NS03ZTBkLWJlZTgtNTM0MTMwOWEyYjE0",
+      "descriptor": "aad.NDE3NDIxOWUtYjk0NS03ZTBkLWJlZTgtNTM0MTMwOWEyYjE0"
+    },
+    "System.CreatedDate": "2025-12-01T12:49:51.283Z",
+    "System.CreatedBy": {
+      "displayName": "Boese Sophia (BCI PAP-EAP1 BCI ESP-PO)",
+      "url": "https://spsprodweu3.vssps.visualstudio.com/Ad89cb949-5302-4c48-ab42-a73aa7ab9023/_apis/Identities/a012d9cd-a629-6af6-abae-d4d102ef7c75",
+      "_links": {
+        "avatar": {
+          "href": "https://dev.azure.com/bosch-bci/_apis/GraphProfile/MemberAvatars/aad.YTAxMmQ5Y2QtYTYyOS03YWY2LWFiYWUtZDRkMTAyZWY3Yzc1"
+        }
+      },
+      "id": "a012d9cd-a629-6af6-abae-d4d102ef7c75",
+      "uniqueName": "obs4fe@bosch.com",
+      "imageUrl": "https://dev.azure.com/bosch-bci/_apis/GraphProfile/MemberAvatars/aad.YTAxMmQ5Y2QtYTYyOS03YWY2LWFiYWUtZDRkMTAyZWY3Yzc1",
+      "descriptor": "aad.YTAxMmQ5Y2QtYTYyOS03YWY2LWFiYWUtZDRkMTAyZWY3Yzc1"
+    },
+    "System.ChangedDate": "2026-01-09T11:29:34.653Z",
+    "System.ChangedBy": {
+      "displayName": "Schaefter Thomas (BCI PAP-PRM)",
+      "url": "https://spsprodweu3.vssps.visualstudio.com/Ad89cb949-5302-4c48-ab42-a73aa7ab9023/_apis/Identities/0a6102ff-c8b7-4f75-9eff-40278093d9f4",
+      "_links": {
+        "avatar": {
+          "href": "https://dev.azure.com/bosch-bci/_apis/GraphProfile/MemberAvatars/aad.NDE3NDIxOWUtYjk0NS03ZTBkLWJlZTgtNTM0MTMwOWEyYjE0"
+        }
+      },
+      "id": "0a6102ff-c8b7-4f75-9eff-40278093d9f4",
+      "uniqueName": "sct2fe@bosch.com",
+      "imageUrl": "https://dev.azure.com/bosch-bci/_apis/GraphProfile/MemberAvatars/aad.NDE3NDIxOWUtYjk0NS03ZTBkLWJlZTgtNTM0MTMwOWEyYjE0",
+      "descriptor": "aad.NDE3NDIxOWUtYjk0NS03ZTBkLWJlZTgtNTM0MTMwOWEyYjE0"
+    },
+    "System.AuthorizedAs": {
+      "displayName": "Schaefter Thomas (BCI PAP-PRM)",
+      "url": "https://spsprodweu3.vssps.visualstudio.com/Ad89cb949-5302-4c48-ab42-a73aa7ab9023/_apis/Identities/0a6102ff-c8b7-4f75-9eff-40278093d9f4",
+      "_links": {
+        "avatar": {
+          "href": "https://dev.azure.com/bosch-bci/_apis/GraphProfile/MemberAvatars/aad.NDE3NDIxOWUtYjk0NS03ZTBkLWJlZTgtNTM0MTMwOWEyYjE0"
+        }
+      },
+      "id": "0a6102ff-c8b7-4f75-9eff-40278093d9f4",
+      "uniqueName": "sct2fe@bosch.com",
+      "imageUrl": "https://dev.azure.com/bosch-bci/_apis/GraphProfile/MemberAvatars/aad.NDE3NDIxOWUtYjk0NS03ZTBkLWJlZTgtNTM0MTMwOWEyYjE0",
+      "descriptor": "aad.NDE3NDIxOWUtYjk0NS03ZTBkLWJlZTgtNTM0MTMwOWEyYjE0"
+    },
+    "System.PersonId": 13481,
+    "System.Watermark": 5074689,
+    "System.CommentCount": 1,
+    "System.Title": "[1,2] [IL] Unplanned Support & Reactive Maintenance",
+    "System.BoardColumn": "New",
+    "System.BoardColumnDone": false,
+    "Microsoft.VSTS.Common.StateChangeDate": "2025-12-01T12:49:51.283Z",
+    "Microsoft.VSTS.Common.StackRank": 325426158,
+    "WEF_D270795F53BF401DA3B55AD62961BF8D_System.ExtensionMarker": true,
+    "WEF_D270795F53BF401DA3B55AD62961BF8D_Kanban.Column": "New",
+    "WEF_D270795F53BF401DA3B55AD62961BF8D_Kanban.Column.Done": false,
+    "WEF_462A3958619E48FD932BF23F709098CC_System.ExtensionMarker": true,
+    "WEF_462A3958619E48FD932BF23F709098CC_Kanban.Column": "New",
+    "WEF_462A3958619E48FD932BF23F709098CC_Kanban.Column.Done": false,
+    "Custom.InitialEstimate": 60,
+    "Custom.PSPElement": "M.9200876.007.1.5",
+    "System.Description": "<div>Unplanned (necessary) Support in 01/26 </div><ul><li>3rd Level Support </li><li>Trouble shooting </li><li>Rollout problems </li> </ul><div><br> </div><div> </div><div><ul> </ul> </div>",
+    "System.Tags": "BD-2026; Maintenance; PP_Prio6; Support"
+  },
+  "multilineFieldsFormat": {
+    "System.Description": "html"
+  },
+  "relations": [
+    {
+      "rel": "System.LinkTypes.Hierarchy-Forward",
+      "url": "https://dev.azure.com/bosch-bci/499c8ba3-dcec-43fe-a78a-05fe25a2b5ea/_apis/wit/workItems/562051",
+      "attributes": {
+        "isLocked": false,
+        "name": "Child"
+      }
+    },
+    {
+      "rel": "System.LinkTypes.Hierarchy-Forward",
+      "url": "https://dev.azure.com/bosch-bci/499c8ba3-dcec-43fe-a78a-05fe25a2b5ea/_apis/wit/workItems/561488",
+      "attributes": {
+        "isLocked": false,
+        "name": "Child"
+      }
+    },
+    {
+      "rel": "System.LinkTypes.Hierarchy-Forward",
+      "url": "https://dev.azure.com/bosch-bci/499c8ba3-dcec-43fe-a78a-05fe25a2b5ea/_apis/wit/workItems/471606",
+      "attributes": {
+        "isLocked": false,
+        "name": "Child"
+      }
+    },
+    {
+      "rel": "System.LinkTypes.Hierarchy-Forward",
+      "url": "https://dev.azure.com/bosch-bci/499c8ba3-dcec-43fe-a78a-05fe25a2b5ea/_apis/wit/workItems/567728",
+      "attributes": {
+        "isLocked": false,
+        "name": "Child"
+      }
+    },
+    {
+      "rel": "System.LinkTypes.Hierarchy-Forward",
+      "url": "https://dev.azure.com/bosch-bci/499c8ba3-dcec-43fe-a78a-05fe25a2b5ea/_apis/wit/workItems/565215",
+      "attributes": {
+        "isLocked": false,
+        "name": "Child"
+      }
+    },
+    {
+      "rel": "System.LinkTypes.Hierarchy-Forward",
+      "url": "https://dev.azure.com/bosch-bci/499c8ba3-dcec-43fe-a78a-05fe25a2b5ea/_apis/wit/workItems/567041",
+      "attributes": {
+        "isLocked": false,
+        "name": "Child"
+      }
+    },
+    {
+      "rel": "System.LinkTypes.Hierarchy-Forward",
+      "url": "https://dev.azure.com/bosch-bci/499c8ba3-dcec-43fe-a78a-05fe25a2b5ea/_apis/wit/workItems/552425",
+      "attributes": {
+        "isLocked": false,
+        "name": "Child"
+      }
+    },
+    {
+      "rel": "System.LinkTypes.Hierarchy-Forward",
+      "url": "https://dev.azure.com/bosch-bci/499c8ba3-dcec-43fe-a78a-05fe25a2b5ea/_apis/wit/workItems/558380",
+      "attributes": {
+        "isLocked": false,
+        "name": "Child"
+      }
+    },
+    {
+      "rel": "System.LinkTypes.Hierarchy-Forward",
+      "url": "https://dev.azure.com/bosch-bci/499c8ba3-dcec-43fe-a78a-05fe25a2b5ea/_apis/wit/workItems/552080",
+      "attributes": {
+        "isLocked": false,
+        "name": "Child"
+      }
+    },
+    {
+      "rel": "System.LinkTypes.Hierarchy-Forward",
+      "url": "https://dev.azure.com/bosch-bci/499c8ba3-dcec-43fe-a78a-05fe25a2b5ea/_apis/wit/workItems/567901",
+      "attributes": {
+        "isLocked": false,
+        "name": "Child"
+      }
+    },
+    {
+      "rel": "System.LinkTypes.Hierarchy-Forward",
+      "url": "https://dev.azure.com/bosch-bci/499c8ba3-dcec-43fe-a78a-05fe25a2b5ea/_apis/wit/workItems/567721",
+      "attributes": {
+        "isLocked": false,
+        "name": "Child"
+      }
+    },
+    {
+      "rel": "System.LinkTypes.Hierarchy-Forward",
+      "url": "https://dev.azure.com/bosch-bci/499c8ba3-dcec-43fe-a78a-05fe25a2b5ea/_apis/wit/workItems/567803",
+      "attributes": {
+        "isLocked": false,
+        "name": "Child"
+      }
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "https://dev.azure.com/bosch-bci/499c8ba3-dcec-43fe-a78a-05fe25a2b5ea/_apis/wit/workItems/564266"
+    },
+    "workItemUpdates": {
+      "href": "https://dev.azure.com/bosch-bci/499c8ba3-dcec-43fe-a78a-05fe25a2b5ea/_apis/wit/workItems/564266/updates"
+    },
+    "workItemRevisions": {
+      "href": "https://dev.azure.com/bosch-bci/499c8ba3-dcec-43fe-a78a-05fe25a2b5ea/_apis/wit/workItems/564266/revisions"
+    },
+    "workItemComments": {
+      "href": "https://dev.azure.com/bosch-bci/499c8ba3-dcec-43fe-a78a-05fe25a2b5ea/_apis/wit/workItems/564266/comments"
+    },
+    "html": {
+      "href": "https://dev.azure.com/bosch-bci/499c8ba3-dcec-43fe-a78a-05fe25a2b5ea/_workitems/edit/564266"
+    },
+    "workItemType": {
+      "href": "https://dev.azure.com/bosch-bci/499c8ba3-dcec-43fe-a78a-05fe25a2b5ea/_apis/wit/workItemTypes/ART%20Organizer"
+    },
+    "fields": {
+      "href": "https://dev.azure.com/bosch-bci/499c8ba3-dcec-43fe-a78a-05fe25a2b5ea/_apis/wit/fields"
+    }
+  },
+  "url": "https://dev.azure.com/bosch-bci/499c8ba3-dcec-43fe-a78a-05fe25a2b5ea/_apis/wit/workItems/564266"
+}
+
+Antwort Beispiel:
+Ich werde den Bug 567041 für Sie analysieren. Lassen Sie mich zunächst die Work Item Details aus Azure DevOps abrufen und dann eine umfassende Analyse durchführen.Lassen Sie mich nun die Parent Work Item Details abrufen und nach ähnlichen Bugs sowie relevanter Dokumentation suchen.Nun suche ich nach relevanter Dokumentation zu Material Delivery App Verbindungsproblemen und Warning Messages in den Repositories.Lassen Sie mich nun nach Release Notes und bekannten Verbindungsproblemen suchen.Lassen Sie mich die Release Notes genauer betrachten, die Verbindungs-Delay-Banner erwähnen.Lassen Sie mich nun relevante Release Notes prüfen.Ich sehe in den Release Notes für Version 5.0 einen wichtigen Bugfix für Material Delivery Verbindungsprobleme. Lassen Sie mich weitere spezifische Informationen zu diesem Bug sammeln.
+
+# Bug 567041 Analyse
+
+## Work Item Overview
+
+• **ID:** 567041
+• **Type:** Bug 
+• **Title:** [TM] Warning message for connection issues in the Material Delivery App (Ticket IN_000000425770)
+• **Status:** New
+• **Assigned To:** Dauenhauer Ralf (BCI ESD-Fe1)
+• **Area Path:** Nx_IES\IES\Transport Management
+• **Tags:** IAS; new; unplanned
+• **Description:** Sporadische Verbindungsunterbrechungen in der Material Delivery App führen zu Warning-Nachrichten, die stündlich auftreten (z.B. in BueP) und Benutzerverwirrung verursachen
+• **Acceptance Criteria:** Fehlen (Lücke identifiziert)
+• **Linked Items:** Parent: #564266 (Unplanned Support & Reactive Maintenance)
+
+## Bug Validation 
+
+• **Result:** Bug bestätigt
+• **Rationale:** Das Problem betrifft echte Verbindungsunterbrechungen, die in der Material Delivery App irrtümlich als Netzwerkprobleme dargestellt werden. Release Notes zeigen dass ähnliche Connection-Delay-Banner-Probleme bereits bearbeitet wurden [C1]
+• **Duplicate/Similarity check:** 
+  - #565316 (Closed): Material delivery view can't connect (IN_000000425753) - ähnlich, aber geschlossen als "Obsolete"
+  - #470518 (Closed/Verified): Material Delivery: Add reload button to connection delay banner - verwandter Fix
+  - #471884 (Closed/Verified): Material Delivery: Time delays from client are logged too frequently - verwandtes Problem
+• **Reproduction/Evidence:** 
+  - Sporadische Unterbrechungen einmal pro Stunde in BueP P System
+  - Screenshot von Warning-Message vorhanden im Work Item
+  - Benutzer sind verwirrt wegen der Warnung vor Netzwerkproblemen
+  - Ticket IN_000000425770 zeigt mehrere Werke sind betroffen
+• **Sources:** [A1], [A2], [R1]
+
+## Functional Scoping
+
+• **Area/Component:** Transport Management / Material Delivery App Frontend
+• **Architecture dependencies:** VehicleTwin Service, Control Panel UI, SignalR Verbindungen
+• **Affected repos/code paths (if identified):** ihub-transportmanagement-web (Frontend), VehicleTwin Service
+• **Solution approach:** Fehlt - keine dokumentierte Lösung in der Work Item Description
+• **Sources:** [A1], [R1]
+
+## Documentation Check
+
+• **Operations Manual (Repo):** Keine spezifische Dokumentation für Connection Warning Banner gefunden - Empfehlung: Dokumentation der Threshold-Einstellungen hinzufügen
+• **Architecture Documentation (Repo):** Keine spezifische Dokumentation zu Material Delivery Connection Handling gefunden - Empfehlung: Architektur der SignalR-Verbindungen dokumentieren  
+• **User Manual (Repo):** Keine Dokumentation zu Warning Messages gefunden - Empfehlung: Benutzerhandbuch für Warning-Nachrichten erweitern
+• **Release Notes (Confluence):** Vorhanden - ähnliche Connection-Banner-Fixes sind in Release 5.0.0 dokumentiert [C1]
+
+## Findings and Recommendations
+
+• **Contradictions/gaps/duplicate suspicion:** 
+  - Work Item #565316 wurde als "Obsolete" geschlossen, obwohl es ähnliche Symptome zeigt
+  - Fehlende Acceptance Criteria in Work Item #567041
+  - Keine klare Lösung dokumentiert
+
+• **Next steps:**
+  1. **Kurzzeitig:** Threshold für Connection-Delay-Warnung erhöhen (basierend auf Fix #464143)
+  2. **Mittelfristig:** Neutral formatierte Benachrichtigung (blau statt gelb) mit Reload-Button implementieren (wie in Expected Behavior beschrieben)
+  3. **Analyse:** Grundursache der stündlichen Verbindungsunterbrechungen identifizieren
+  4. **Dokumentation:** Acceptance Criteria definieren und lösen
+  5. **Validation:** Mit betroffenen Werken (BueP P, AdP P) testen
+
+## Sources
+
+• **Azure DevOps Boards:** [A1] Work Item #567041 - Warning message for connection issues; [A2] Work Item #565316 - Material delivery view can't connect
+• **Azure DevOps Repos:** [R1] Code search results for Material Delivery connection warning
+• **Confluence (Release Notes):** [C1] Release 5.0.0 - Bug 447821: Improved robustness of work step confirmation to avoid network delays
+
+**Empfehlung:** Dieser Bug sollte priorisiert werden, da er mehrere Werke betrifft und Benutzerverwirrung verursacht. Die Lösung sollte sowohl die UI-Verbesserung (neutraler Banner mit Reload-Button) als auch die Grundursachen-Analyse der stündlichen Verbindungsunterbrechungen umfassen.

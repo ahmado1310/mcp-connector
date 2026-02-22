@@ -1,0 +1,68 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.manifest
+*.spec
+ 
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+.env
+ 
+# Claude
+.claude/
+ 
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+ 
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+ 
+# Logs
+*.log
+logs/
+ 
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+ 
+# Package managers
+.uv/
+*.lock
+ 
+# Temporary files
+*.tmp
+*.temp
+tmp/
+temp/
+ 
+#configfiles
+*config.json

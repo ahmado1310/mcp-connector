@@ -1,0 +1,24 @@
+{
+  "$schema": "https://gofastmcp.com/schemas/fastmcp_config/v1.json",
+  "entrypoint": {
+    "file": "gateway_server.py",
+    "object": "gateway"
+  },
+  "environment": {
+    "python": ">=3.10",
+    "dependencies": [
+      "fastmcp>=2.0",
+      "rich>=13.0"
+    ]
+  },
+  "deployment": {
+    "transport": "http",
+    "host": "127.0.0.1",
+    "port": 8001,
+    "path": "/mcp",
+    "log_level": "info",
+    "env": {
+      "GATEWAY_CONFIG": "gateway_config.json"
+    }
+  }
+}

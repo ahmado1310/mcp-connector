@@ -1,0 +1,24 @@
+[project]
+name = "mcp-connector"
+version = "0.1.0"
+description = "MCP Gateway with Azure DevOps and Confluence/Docupedia servers"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.116.1",
+    "fastmcp>=2.11.3",
+    "requests>=2.31.0",
+    "python-dotenv>=1.0.0",
+    "uvicorn>=0.38.0",
+    "starlette>=0.50.0",
+    "azure-devops>=7.1.0b4",
+    "urllib3>=2.0.0",
+    "rich>=14.1.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["mcp-ado", "mcp-docupedia", "mcp-gateway"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

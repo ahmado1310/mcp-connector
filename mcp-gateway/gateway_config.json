@@ -1,0 +1,56 @@
+{
+  "gateway": {
+    "name": "MCP Gateway Server",
+    "description": "Configurable gateway for multiple MCP servers",
+    "cors": {
+      "origins": ["*"],
+      "credentials": true,
+      "methods": ["GET", "POST", "OPTIONS"],
+      "headers": ["*"],
+      "expose_headers": ["mcp-session-id", "Mcp-Session-Id", "*"]
+    },
+    "logging": {
+      "level": "INFO",
+      "format": "%(asctime)s - %(levelname)s - %(message)s"
+    }
+  },
+  "child_servers": [
+    {
+      "name": "Docupedia Server (Proxy)",
+      "type": "proxy",
+      "url": "http://localhost:8004/mcp",
+      "prefix": "docupedia",
+      "health_endpoint": "/healthcheck",
+      "description": "Confluence/Docupedia integration via HTTP proxy"
+    },
+    {
+      "name": "Azure DevOps Server (Proxy)",
+      "type": "proxy",
+      "url": "http://localhost:8003/mcp",
+      "prefix": "ado",
+      "health_endpoint": "/healthcheck",
+      "description": "Azure DevOps integration via HTTP proxy"
+    }
+  ],
+  "child_servers_examples": [
+    {
+      "_comment": "Example: Load all servers as modules for better performance",
+      "name": "Demo Module",
+      "type": "module",
+      "module_path": "mcp-demo-server",
+      "prefix": "demo"
+    },
+    {
+      "name": "Outlook Module",
+      "type": "module",
+      "module_path": "outlook-mcp-server",
+      "prefix": "outlook"
+    },
+    {
+      "name": "PEPS Module",
+      "type": "module",
+      "module_path": "mcp-peps-db",
+      "prefix": "peps"
+    }
+  ]
+}

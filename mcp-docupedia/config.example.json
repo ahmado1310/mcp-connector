@@ -1,0 +1,19 @@
+{
+  "confluence": {
+    "host": "inside-docupedia.bosch.com/confluence",
+    "default_space": "Your_Space_Key"
+  },
+  "proxy": {
+    "enabled": true,
+    "url": "http://localhost:3128",
+    "disable_ssl_verification": true
+  },
+  "server": {
+    "port": 8004,
+    "host": "0.0.0.0"
+  },
+  "search_defaults": {
+    "max_results": 30,
+    "content_type": "page"
+  }
+}
